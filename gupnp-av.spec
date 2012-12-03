@@ -1,11 +1,11 @@
 Summary:	Library for building UPnP A/V applications
 Name:		gupnp-av
-Version:	0.11.2
-Release:	2
+Version:	0.11.4
+Release:	1
 License:	LGPL v2
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gupnp-av/0.11/%{name}-%{version}.tar.xz
-# Source0-md5:	b4650ef545d5b44571feac29d5839f9c
+# Source0-md5:	489c98b4a393bb7870d4bd5df2c5a563
 URL:		http://www.gupnp.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
