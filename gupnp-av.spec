@@ -1,11 +1,11 @@
 Summary:	Library for building UPnP A/V applications
 Name:		gupnp-av
-Version:	0.12.5
+Version:	0.12.6
 Release:	1
 License:	LGPL v2
 Group:		Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gupnp-av/0.12/%{name}-%{version}.tar.xz
-# Source0-md5:	85efeaef8ab5dcc71410e7d448bc47cf
+# Source0-md5:	f56cdb269376a9e6cb062eb9960ccf57
 URL:		http://www.gupnp.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -58,6 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -77,7 +79,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libgupnp-av-1.0.so
 %{_datadir}/gir-1.0/GUPnPAV-1.0.gir
 %{_datadir}/vala/vapi/gupnp-av-1.0.deps
-%{_datadir}/vala/vapi//gupnp-av-1.0.vapi
+%{_datadir}/vala/vapi/gupnp-av-1.0.vapi
 %{_includedir}/gupnp-av-1.0
 %{_pkgconfigdir}/gupnp-av-1.0.pc
 
